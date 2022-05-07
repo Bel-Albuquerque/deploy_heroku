@@ -76,4 +76,5 @@ git remote rename heroku heroku-origin
 ```
 obs.: Criar um outro remote da forma que fizemos ou renomear seu remote pode ser útil se você tiver múltiplos apps do Heroku usando o mesmo código fonte. Por exemplo, uma versão para o ambiente de testes e outra para um ambiente de produção. Nesse caso, cada app do Heroku tem seu próprio remote no seu repositório local.
 
+https://app.betrybe.com/course/back-end/deployment/infraestrutura-deploy-com-heroku/30597149-145b-49a1-924c-bd8050a8f249/conteudo/b7d4a5c3-c013-4e3a-9573-d0434cd88359/preparando-um-projeto-para-deploy/84896476-2f76-4b22-8ff7-8cc842e6d9b8?use_case=next_button
 
