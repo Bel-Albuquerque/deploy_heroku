@@ -76,5 +76,22 @@ git remote rename heroku heroku-origin
 ```
 obs.: Criar um outro remote da forma que fizemos ou renomear seu remote pode ser útil se você tiver múltiplos apps do Heroku usando o mesmo código fonte. Por exemplo, uma versão para o ambiente de testes e outra para um ambiente de produção. Nesse caso, cada app do Heroku tem seu próprio remote no seu repositório local.
 
+Caso o seu projeto possua variáveis de ambiente, você pode setá-las utilizando o comando config:set.
+```
+heroku config:set TESTE="texto qualquer" --app nome-do-seu-app-12345
+```
+
+Para listar as variáveis de ambiente, basta utilizar o comando config. O comando config mostra as variáveis de ambiente criadas por o usuário mas não as variáveis padrão do Heroku (como por exemplo a variável PORT).
+```
+heroku config --app nome-do-seu-app-12345
+```
+
+### Removendo um app do Heroku
+Anteriormente você viu como remover um remote para que ele não aponte mais para um app no Heroku. De maneira semelhante é possível remover também um app que você publicou lá. Para isto utilize o comando heroku destroy através da sintaxe heroku destroy --app nome-do-app-12345 --confirm nome-do-app-12345.
+Vamos remover o app meu-deploy-de-testes-29302:
+```
+heroku destroy --app meu-deploy-de-testes-29302 --confirm meu-deploy-de-testes-29302
+```
+
 https://app.betrybe.com/course/back-end/deployment/infraestrutura-deploy-com-heroku/30597149-145b-49a1-924c-bd8050a8f249/conteudo/b7d4a5c3-c013-4e3a-9573-d0434cd88359/preparando-um-projeto-para-deploy/84896476-2f76-4b22-8ff7-8cc842e6d9b8?use_case=next_button
 
